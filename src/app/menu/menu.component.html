@@ -1,0 +1,31 @@
+<nav id="navbar" class="navbar navbar-expand-sm  navbar-dark na">
+    
+  <ul class="navbar-nav na justify-content-end" style="">
+    <li class="nav-item im">
+      <a href="/home" routerLinkActive="Active">
+      <img class="ima" alt="logo"  src="../../assets/img/logo.png">
+      </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav navbar-collapse justify-content-end" >
+      
+      <li class="nav-item " style="padding-right: 10px;">
+        <a style="height: 45px; width:110px;" *ngIf="hardcode.isUserLoggedIn()" routerLink="accounts" routerLinkActive="Active" class="nav-link btn btn-primary btn-outline-secondary">Account List</a>
+      </li>
+      <li class="nav-item" style="padding-right: 30px;">
+        <a style="height: 45px; width:130px;" *ngIf="hardcode.isUserLoggedInuser()" routerLink="account-info" routerLinkActive="Active" class="nav-link btn btn-primary btn-outline-secondary">Account Details</a>
+      </li>
+      <li class="nav-item" style="padding-right: 10px;">
+        <a style="height: 45px; width:130px;" *ngIf="hardcode.isUserLoggedInuser()" routerLink="transfer" routerLinkActive="Active" class="nav-link btn btn-primary btn-outline-secondary">Money Transfer</a>
+      </li>
+      <li class="nav-item"style="padding-right: 45px;">
+        <a style="height: 45px; width:128px;" *ngIf="hardcode.isUserLoggedIn()" routerLink="create-account" routerLinkActive="Active" class="nav-link btn btn-primary btn-outline-secondary">Create Account</a>
+      </li>
+        <li class="nav-item"style="padding-right: 8px;">
+          <a style="height: 45px; width:110px;" *ngIf="hardcode.isUserLoggedIn()" href="/logout" routerLinkActive="Active" class="nav-link btn btn-danger btn-outline-secondary"><img src="../../assets/img/logout.png" style="height:25px">Logout</a>
+        </li>
+        <li class="nav-item "style="padding-right: 8px;">
+          <a style="height: 45px; width:110px;" *ngIf="hardcode.isUserLoggedInuser()" href="/custlogout" routerLinkActive="Active" class="nav-link btn btn-danger btn-outline-secondary"><img src="../../assets/img/logout.png" style="height:25px">Logout</a>
+        </li>
+    </ul>
+  </nav>

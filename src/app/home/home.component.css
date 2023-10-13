@@ -1,0 +1,19 @@
+.b{
+    height:70px;
+    width:200px;
+}
+li{
+    padding: 20px 0px;
+    
+}
+ul{
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(37, 73, 140, 0.825);
+    height: 150%;
+    width: 70%;
+    padding-bottom: 25px;
+}

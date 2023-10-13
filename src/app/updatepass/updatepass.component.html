@@ -1,0 +1,14 @@
+<div style="padding-top: 40px;width:70%;padding-left: 350px;color: white;">
+    <div style="background-color: rgba(37, 73, 140, 0.825);height:80%px;">    <h3 style="text-align: center;padding-top: 20px;">Update Password</h3><br>
+    <form (ngSubmit)="onSubmit()" style="padding:0px 40px;padding-bottom: 20px;">
+        <div class="form-group">
+            <label style="padding:10px 0px;">Enter Confirmed Password</label>
+            <input type="text" class="form-control" id="password" [(ngModel)]="account.password" name="password">
+        </div>
+        
+        <br>
+        <button class="btn btn-success" type="submit" style="width:80px;height:40px;">Submit</button>
+        <button type="submit" class="btn btn-light" style="float: right; width:80px;height:40px;" (click)="back()">Back</button><br><br>
+
+    </form>
+    </div>

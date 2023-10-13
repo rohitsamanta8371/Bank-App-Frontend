@@ -1,0 +1,25 @@
+<div class="col-md-6 offset-md-3 " style="width: 600px;padding-top: 60px;">
+    <div style="background-color: rgba(37, 73, 140, 0.825);color: white;">
+    <h3 class="colo" style="padding-top: 30px;text-align: center;">Fund Transfer</h3>
+        <form class="colo" style="padding: 10px 60px ;" (ngSubmit)="getAccountdetails()">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Reciver Account Number</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="accountnum" name="accountnum">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Amount</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="amt" name="amt">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]="mpin" name="mpin">
+            </div>
+            <div style="padding-top: 10px; padding-bottom: 10px;padding-left: 0px;">
+                <button type="submit" class="btn btn-success" style="width:80px;height:40px;">Submit</button> 
+                <button type="submit" class="btn btn-primary" style="float: right; width:80px;height:40px;" (click)="custlogin()">Back</button><br><br>
+            </div>  
+            
+            
+        </form>
+    </div>
+</div>

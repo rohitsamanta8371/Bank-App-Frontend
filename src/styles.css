@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    height: 150%;
+    background-position: center;
+    background-size:180%;
+}
+body{
+    height: 170%;
+    
+}
+.footer{
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color:rgb(37, 73, 140);
+    text-align: center;
+    color: white;
+}

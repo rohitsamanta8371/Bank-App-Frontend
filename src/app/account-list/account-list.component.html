@@ -1,0 +1,32 @@
+<div style="padding-top: 40px;padding-bottom: 100px;padding-top: 80px;">
+    <div style="background-color: rgba(37, 73, 140, 0.825);padding-top: 20px;">
+        <h2 class="c" style="color: white">Account List</h2><br>
+<table class="table " style="color: white;">
+
+    <thead>
+        <tr  style="text-align: center">
+            <th>Name</th>
+            <th>Account Number</th>
+            <th>Phone</th>
+            <th>Eamil</th>
+            <th>Balance</th>
+            <th>Actions</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let account of accounts"  style="text-align: center">
+            <td>{{account.name}}</td>
+            <td>{{account.acno}}</td>
+            <td>{{account.phone}}</td>
+            <td>{{account.email}}</td>
+            <td>{{account.balance}}</td>
+            <td>
+                <button (click)="updateAccount(account.id)" class="btn btn-info">Update</button>
+                <button (click)="deleteAccount(account.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>

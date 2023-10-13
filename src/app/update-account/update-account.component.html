@@ -1,0 +1,28 @@
+<div class="col-md-6 offset-md-3 " style="width: 600px;padding-top: 50px;color: white;padding-bottom: 100px;">
+    <div style="background-color: rgba(37, 73, 140, 0.825);padding-left: 30px;padding-top: 20px;">
+    <h3 style="text-align: center;">Update Account</h3><br>
+    <form (ngSubmit)="onSubmit()" style="padding: 0px 60px ;padding-bottom: 10px;">
+        <div class="form-group" style="padding-bottom: 10px;">
+            <label>Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="account.name" name="name">
+        </div>
+        <div class="form-group" style="padding-bottom: 10px;">
+            <label>Account Number</label>
+            <input type="text" class="form-control" id="acno" [(ngModel)]="account.acno" name="acno">
+        </div>
+        <div class="form-group" style="padding-bottom: 10px;">
+            <label>Phone No.</label>
+            <input type="text" class="form-control" id="phone" [(ngModel)]="account.phone" name="phone">
+        </div>
+        <div class="form-group" style="padding-bottom: 0px;">
+            <label>Email</label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="account.email" name="email">
+        </div>
+        <br>
+        <div style="padding-top: 10px; padding-bottom: 0px;padding-left: 0px;">
+            <button class="btn btn-success" type="submit">Submit</button>
+            <button type="submit" class="btn btn-light" style="float: right; width:80px;height:40px;" (click)="back()">Back</button><br><br>
+        </div>
+    </form>
+    </div>
+</div>

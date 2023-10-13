@@ -1,0 +1,18 @@
+<div class="col-md-6 offset-md-3 " style="width: 600px;padding-top: 100px;">
+    <div style="background-color: rgba(37, 73, 140, 0.825)">
+    <h3 class="colo" style="padding-top: 30px;text-align: center;">Customer Login</h3>
+        <form class="colo" style="padding: 30px 60px ;">
+            <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Customer Id</label>
+            <input type="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id" [(ngModel)]="id">
+            </div>
+            <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="password">
+            </div>
+            <div style="padding-top: 10px; padding-bottom: 10px;padding-left: 0px;">
+                <button type="submit" class="btn btn-info" (click)="custlogin()">Submit</button>
+                <button type="submit" class="btn btn-light" style="float: right; width:80px;height:40px;" (click)="back()">Back</button><br><br>
+            </div> 
+        </form>
+</div>
